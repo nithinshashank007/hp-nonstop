@@ -1,0 +1,13 @@
+IDENTIFICATION DIVISION.
+       PROGRAM-ID. INPUTEXAMPLE.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       77 NAME        PIC X(20).
+
+       PROCEDURE DIVISION.
+           DISPLAY "ENTER YOUR NAME: ".
+           ACCEPT NAME.
+           DISPLAY "HELLO, " NAME.
+           STOP RUN.
+           

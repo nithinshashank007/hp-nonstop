@@ -7,5 +7,5 @@ working storage section.
 01 result pic 9(5).
 procedure division.
 display "455".
-move 455 to num 
+move 455 to num
 stop run.

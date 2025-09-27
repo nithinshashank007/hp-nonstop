@@ -1,0 +1,14 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. COMBINED-EXAMPLE.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01  X  PIC 9(3) VALUE 10.
+       01  Y  PIC 9(3) VALUE 20.
+
+       PROCEDURE DIVISION.
+           IF X > 5 AND Y < 30
+               DISPLAY "BOTH CONDITIONS TRUE".
+           IF X < 5 OR Y = 20
+               DISPLAY "AT LEAST ONE CONDITION TRUE".
+           STOP RUN.

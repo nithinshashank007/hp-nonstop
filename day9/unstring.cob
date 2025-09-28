@@ -1,0 +1,20 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. UNSTRING-EXAMPLE.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01  ADDRESS   PIC X(30) VALUE "HYDERABAD-TELANGANA-INDIA".
+       01  PART1     PIC X(15).
+       01  PART2     PIC X(15).
+       01  PART3     PIC X(15).
+
+       PROCEDURE DIVISION.
+           UNSTRING ADDRESS
+               DELIMITED BY "-"
+               INTO PART1, PART2, PART3
+           END-UNSTRING.
+
+           DISPLAY "CITY: " PART1.
+           DISPLAY "STATE: " PART2.
+           DISPLAY "COUNTRY: " PART3.
+           STOP RUN.
